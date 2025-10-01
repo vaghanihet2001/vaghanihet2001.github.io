@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEX - AI/ML & Developer Tools</title>
+  <link rel="icon" href="assets/logo-removebg.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Base Styling */
     * {
       margin: 0;
       padding: 0;
@@ -29,7 +29,6 @@
       text-decoration: underline;
     }
 
-    /* Header */
     header {
       display: flex;
       justify-content: space-between;
@@ -51,7 +50,6 @@
       font-weight: 600;
     }
 
-    /* Hero Section */
     .hero {
       display: flex;
       flex-direction: column;
@@ -85,7 +83,6 @@
       background-color: #0066cc;
     }
 
-    /* Sections */
     section {
       padding: 4rem 2rem;
       max-width: 1000px;
@@ -117,7 +114,37 @@
       box-shadow: 0 5px 20px rgba(30,144,255,0.5);
     }
 
-    /* Footer */
+    /* Projects horizontal scroll */
+    .projects-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      scroll-behavior: smooth;
+    }
+
+    .projects-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .projects-container::-webkit-scrollbar-thumb {
+      background-color: #1E90FF;
+      border-radius: 4px;
+    }
+
+    .project-card {
+      flex: 0 0 300px;
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(30,144,255,0.5);
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -127,9 +154,8 @@
       color: #888;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
-      .features {
+      .features, .contact {
         grid-template-columns: 1fr;
       }
     }
@@ -137,75 +163,97 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="assets/logo-removebg.png" alt="HEX Logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <img src="assets/logo-removebg.png" alt="HEX Logo">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to HEX</h1>
-    <p>HEX is my flagship AI/ML product and developer tools suite. I build desktop apps, web apps, and utilities that simplify workflows for developers.</p>
-    <a href="#contact" class="button">Get in Touch</a>
-  </section>
+<section class="hero">
+  <h1>Welcome to HEX</h1>
+  <p>HEX is my flagship AI/ML product and developer tools suite. I build desktop apps, web apps, and utilities that simplify workflows for developers.</p>
+  <a href="#contact" class="button">Get in Touch</a>
+</section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an AI/ML Engineer passionate about building tools, desktop applications, and web applications that help developers improve productivity and efficiency. HEX is the main product I have developed, combining my AI/ML expertise with real-world developer tools.</p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am an AI/ML Engineer passionate about building tools, desktop applications, and web applications that help developers improve productivity and efficiency. HEX is the main product I have developed, combining my AI/ML expertise with real-world developer tools.</p>
+</section>
 
-  <!-- Features Section -->
-  <section id="features">
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature-card">
-        <h3>AI/ML Models</h3>
-        <p>Implementing state-of-the-art AI and ML pipelines for real-world applications.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Desktop Applications</h3>
-        <p>Cross-platform desktop apps designed for productivity and developer workflows.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Web Applications</h3>
-        <p>Interactive and modern web applications to streamline developer tasks.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Developer Tools</h3>
-        <p>Utilities and extensions to improve coding efficiency and debugging.</p>
-      </div>
+<section id="features">
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature-card">
+      <h3>AI/ML Models</h3>
+      <p>Implementing state-of-the-art AI and ML pipelines for real-world applications.</p>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact">
-      <div class="feature-card">
-        <h3>Email</h3>
-        <p>vaghanihet2001@gmail.com</p>
-      </div>
-      <div class="feature-card">
-        <h3>GitHub</h3>
-        <p><a href="https://github.com/vaghanihet2001" target="_blank">github.com/vaghanihet2001</a></p>
-      </div>
-      <div class="feature-card">
-        <h3>LinkedIn</h3>
-        <p><a href="https://www.linkedin.com/in/ai-ml-developer" target="_blank">https://www.linkedin.com/in/ai-ml-developer</a></p>
-      </div>
+    <div class="feature-card">
+      <h3>Desktop Applications</h3>
+      <p>Cross-platform desktop apps designed for productivity and developer workflows.</p>
     </div>
-  </section>
+    <div class="feature-card">
+      <h3>Web Applications</h3>
+      <p>Interactive and modern web applications to streamline developer tasks.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Developer Tools</h3>
+      <p>Utilities and extensions to improve coding efficiency and debugging.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 HEX. All Rights Reserved.
-  </footer>
+<!-- Projects Section with horizontal scroll -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>HEX AI/ML Suite</h3>
+      <p>Core AI/ML models and pipelines developed for real-world applications.</p>
+      <p><a href="https://github.com/vaghanihet2001/HEX-ML" target="_blank">View Repo</a></p>
+    </div>
+    <div class="project-card">
+      <h3>HEX Web Apps</h3>
+      <p>Interactive web applications to streamline developer workflows.</p>
+      <p><a href="https://github.com/vaghanihet2001/HEX-WebApps" target="_blank">View Repo</a></p>
+    </div>
+    <div class="project-card">
+      <h3>HEX Developer Tools</h3>
+      <p>Utilities and extensions to improve coding efficiency.</p>
+      <p><a href="https://github.com/vaghanihet2001/HEX-Tools" target="_blank">View Repo</a></p>
+    </div>
+    <div class="project-card">
+      <h3>HEX Desktop App</h3>
+      <p>Cross-platform desktop app for developer productivity.</p>
+      <p><a href="https://github.com/vaghanihet2001/HEX-Desktop" target="_blank">View Repo</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact">
+    <div class="feature-card">
+      <h3>Email</h3>
+      <p>vaghanihet2001@gmail.com</p>
+    </div>
+    <div class="feature-card">
+      <h3>GitHub</h3>
+      <p><a href="https://github.com/vaghanihet2001" target="_blank">github.com/vaghanihet2001</a></p>
+    </div>
+    <div class="feature-card">
+      <h3>LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/ai-ml-developer" target="_blank">linkedin.com/in/ai-ml-developer</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 HEX. All Rights Reserved.
+</footer>
 
 </body>
 </html>
