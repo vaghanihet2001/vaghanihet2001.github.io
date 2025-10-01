@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Het Vaghani</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEX - AI/ML & Developer Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #1E90FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #333;
+      position: sticky;
+      top: 0;
+      background-color: #121212;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .hero a.button {
+      padding: 0.75rem 2rem;
+      background-color: #1E90FF;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .hero a.button:hover {
+      background-color: #0066cc;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #1E90FF;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .features, .contact {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(30,144,255,0.5);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #333;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello! I'm Het Vaghani</h1>
-  <p>Welcome to my GitHub profile page.</p>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/logo-removebg.png" alt="HEX Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to HEX</h1>
+    <p>HEX is my flagship AI/ML product and developer tools suite. I build desktop apps, web apps, and utilities that simplify workflows for developers.</p>
+    <a href="#contact" class="button">Get in Touch</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an AI/ML Engineer passionate about building tools, desktop applications, and web applications that help developers improve productivity and efficiency. HEX is the main product I have developed, combining my AI/ML expertise with real-world developer tools.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>AI/ML Models</h3>
+        <p>Implementing state-of-the-art AI and ML pipelines for real-world applications.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Desktop Applications</h3>
+        <p>Cross-platform desktop apps designed for productivity and developer workflows.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Web Applications</h3>
+        <p>Interactive and modern web applications to streamline developer tasks.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Developer Tools</h3>
+        <p>Utilities and extensions to improve coding efficiency and debugging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <div class="feature-card">
+        <h3>Email</h3>
+        <p>vaghanihet2001@gmail.com</p>
+      </div>
+      <div class="feature-card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/vaghanihet2001" target="_blank">github.com/vaghanihet2001</a></p>
+      </div>
+      <div class="feature-card">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/ai-ml-developer" target="_blank">https://www.linkedin.com/in/ai-ml-developer</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 HEX. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
