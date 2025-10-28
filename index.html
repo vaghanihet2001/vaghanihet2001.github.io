@@ -188,11 +188,26 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.2rem;
       }
+
+      /* 🔹 Make projects vertical on mobile */
+      .projects-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 1.5rem;
+      }
     }
+
+    .projects-container {
+      transition: all 0.3s ease;
+    }
+
+
   </style>
 </head>
 <body>
@@ -249,7 +264,7 @@
       <p><a href="https://github.com/vaghanihet2001/HexAI" target="_blank">🔗 View Repo</a></p>
     </div>
     <div class="project-card">
-      <h3><a href="https://hexflow.hexverce.com" target="_blank">HexFlow</a></h3>
+      <h3><a href="https://hexflow.hexverce.in" target="_blank">HexFlow</a></h3>
       <p>An interactive web app for designing workflows, low-level designs (LLDs), and high-level designs (HLDs).</p>
       <p><a href="https://github.com/vaghanihet2001/HexFlow" target="_blank">🔗 View Repo</a></p>
     </div>
