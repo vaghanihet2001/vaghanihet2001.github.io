@@ -47,14 +47,9 @@
   }
   </script>
 
-  <!-- ✅ ICON + FONTS -->
   <link rel="icon" href="favicon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- ✅ OPTIONAL: GOOGLE SITE VERIFICATION -->
-  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
-
-  <!-- ✅ STYLE -->
   <style>
     * {
       margin: 0;
@@ -62,30 +57,25 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
-
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 100px;
     }
-
     body {
       background: radial-gradient(circle at top left, #0a0a0a, #121212 40%, #0d0d0d);
       color: #e0e0e0;
       line-height: 1.6;
       overflow-x: hidden;
     }
-
     a {
       color: #1E90FF;
       text-decoration: none;
       transition: color 0.3s;
     }
-
     a:hover {
       color: #63b3ff;
       text-decoration: underline;
     }
-
     header {
       display: flex;
       justify-content: space-between;
@@ -99,16 +89,13 @@
       z-index: 1000;
       height: 80px;
     }
-
     header img {
       height: 60px;
     }
-
     nav a {
       margin-left: 1.5rem;
       font-weight: 600;
     }
-
     .hero {
       display: flex;
       flex-direction: column;
@@ -118,7 +105,6 @@
       padding: 5rem 2rem;
       animation: fadeIn 1.2s ease;
     }
-
     .hero h1 {
       font-size: 3.2rem;
       font-weight: 700;
@@ -127,14 +113,12 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 1rem;
     }
-
     .hero p {
       font-size: 1.2rem;
       max-width: 700px;
       margin-bottom: 2rem;
       color: #cfcfcf;
     }
-
     .hero a.button {
       padding: 0.9rem 2.5rem;
       background: linear-gradient(90deg, #1E90FF, #63b3ff);
@@ -144,19 +128,16 @@
       box-shadow: 0 0 10px rgba(30,144,255,0.4);
       transition: all 0.3s;
     }
-
     .hero a.button:hover {
       transform: translateY(-3px);
       box-shadow: 0 0 25px rgba(30,144,255,0.7);
     }
-
     section {
       padding: 5rem 2rem;
       max-width: 1100px;
       margin: 0 auto;
       animation: fadeUp 1s ease;
     }
-
     section h2 {
       font-size: 2rem;
       font-weight: 700;
@@ -168,13 +149,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
     .features, .contact {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
-
     .feature-card, .project-card {
       background: rgba(30, 30, 30, 0.8);
       backdrop-filter: blur(10px);
@@ -184,12 +163,10 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
       transition: all 0.3s ease;
     }
-
     .feature-card:hover, .project-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 10px 25px rgba(30,144,255,0.4);
     }
-
     .projects-container {
       display: flex;
       overflow-x: auto;
@@ -197,20 +174,16 @@
       padding-bottom: 1rem;
       scroll-behavior: smooth;
     }
-
     .projects-container::-webkit-scrollbar {
       height: 8px;
     }
-
     .projects-container::-webkit-scrollbar-thumb {
       background: linear-gradient(90deg, #1E90FF, #63b3ff);
       border-radius: 4px;
     }
-
     .project-card h3 {
       color: #63b3ff;
     }
-
     footer {
       text-align: center;
       padding: 2rem;
@@ -220,17 +193,14 @@
       color: #888;
       animation: fadeIn 1.5s ease;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.2rem; }
       .projects-container {
@@ -243,7 +213,6 @@
 </head>
 
 <body>
-
 <header>
   <img src="favicon.png" alt="Hexverce Logo">
   <nav>
@@ -256,13 +225,13 @@
 
 <section class="hero">
   <h1>Welcome to Hexverce</h1>
-  <p>Hexverce is my flagship suite of AI/ML products and developer tools — built to enhance productivity, automate workflows, and empower innovation. Explore intelligent solutions like HexFlow, HexLabel, and HexAI that bring automation and creativity together.</p>
+  <p>Hexverce is my flagship suite of AI/ML products and developer tools — built to enhance productivity, automate workflows, and empower innovation.</p>
   <a href="#contact" class="button">Get in Touch</a>
 </section>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I’m an AI/ML Engineer passionate about creating powerful yet easy-to-use tools for developers. My projects combine intelligent automation, sleek UI, and robust backends to simplify complex tasks in data science and software engineering.</p>
+  <p>I’m an AI/ML Engineer passionate about creating powerful yet easy-to-use tools for developers.</p>
 </section>
 
 <section id="features">
@@ -270,19 +239,19 @@
   <div class="features">
     <div class="feature-card">
       <h3>AI/ML Models</h3>
-      <p>Implementing state-of-the-art deep learning models for real-world use cases.</p>
+      <p>Implementing deep learning models for real-world use cases.</p>
     </div>
     <div class="feature-card">
       <h3>Desktop Applications</h3>
-      <p>Cross-platform desktop tools integrated with AI for seamless productivity.</p>
+      <p>Cross-platform tools integrated with AI for seamless productivity.</p>
     </div>
     <div class="feature-card">
       <h3>Web Applications</h3>
-      <p>Modern, responsive web platforms designed for intelligent workflows.</p>
+      <p>Modern, responsive web platforms for intelligent workflows.</p>
     </div>
     <div class="feature-card">
       <h3>Developer Tools</h3>
-      <p>Utilities, frameworks, and extensions to improve coding and automation.</p>
+      <p>Utilities, frameworks, and extensions for automation.</p>
     </div>
   </div>
 </section>
@@ -292,17 +261,17 @@
   <div class="projects-container">
     <div class="project-card">
       <h3>Hex AI Assistant</h3>
-      <p>An LLM-based assistant capable of answering questions, browsing the web, and performing desktop actions intelligently.</p>
+      <p>LLM-based assistant that can browse and automate tasks intelligently.</p>
       <p><a href="https://github.com/vaghanihet2001/HexAI" target="_blank">🔗 View Repo</a></p>
     </div>
     <div class="project-card">
       <h3><a href="https://hexflow.hexverce.in" target="_blank">HexFlow</a></h3>
-      <p>An interactive web app for designing workflows, low-level designs (LLDs), and high-level designs (HLDs).</p>
+      <p>Interactive web app for workflow and design creation.</p>
       <p><a href="https://github.com/vaghanihet2001/HexFlow" target="_blank">🔗 View Repo</a></p>
     </div>
     <div class="project-card">
       <h3>HexLabel</h3>
-      <p>A modern annotation platform designed for efficient image and dataset labeling in AI/ML projects.</p>
+      <p>Modern annotation platform for dataset labeling in AI/ML projects.</p>
       <p><a href="https://github.com/vaghanihet2001/HexLabel" target="_blank">🔗 View Repo</a></p>
     </div>
   </div>
@@ -313,7 +282,7 @@
   <div class="contact">
     <div class="feature-card">
       <h3>📧 Email</h3>
-      <p><a href="mailto:vaghanihet2001@gmail.com" target="_blank">vaghanihet2001@gmail.com</a></p>
+      <p><a href="mailto:vaghanihet2001@gmail.com">vaghanihet2001@gmail.com</a></p>
     </div>
     <div class="feature-card">
       <h3>💻 GitHub</h3>
@@ -329,6 +298,5 @@
 <footer>
   &copy; 2025 Hexverce. All Rights Reserved.
 </footer>
-
 </body>
 </html>
