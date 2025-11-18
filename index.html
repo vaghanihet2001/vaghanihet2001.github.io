@@ -1,302 +1,1133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hexverce | AI/ML & Developer Tools by Het Vaghani</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HexVerce | AI/ML Tools by Het Vaghani</title>
 
-  <!-- ✅ BASIC SEO -->
-  <meta name="description" content="Hexverce is a suite of AI/ML products, developer tools, and web apps built by Het Vaghani to enhance productivity, automate workflows, and empower innovation." />
-  <meta name="keywords" content="Hexverce, HEX, AI tools, ML tools, Het Vaghani, Vaghani Het, HexLabel, HexFlow, Hex AI Assistant, Computer Vision Engineer, AI developer, machine learning engineer, developer tools, web apps, productivity tools" />
-  <meta name="author" content="Het Vaghani" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://hexverce.in/" />
+    <!-- ✅ BASIC SEO -->
+    <meta name="description" content="Hexverce is a suite of AI/ML products, developer tools, and web apps built by Het Vaghani to enhance productivity, automate workflows, and empower innovation." />
+    <meta name="keywords" content="Hexverce, HEX, AI tools, ML tools, Het Vaghani, Vaghani Het, HexLabel, HexFlow, Hex AI Assistant, Computer Vision Engineer, AI developer, machine learning engineer, developer tools, web apps, productivity tools" />
+    <meta name="author" content="Het Vaghani" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hexverce.in/" />
 
-  <!-- ✅ SOCIAL SHARING (OPEN GRAPH) -->
-  <meta property="og:title" content="Hexverce | AI/ML & Developer Tools by Het Vaghani" />
-  <meta property="og:description" content="Explore Hexverce — a suite of AI/ML and developer tools crafted to enhance productivity, automate workflows, and accelerate innovation." />
-  <meta property="og:image" content="https://hexverce.in/favicon.png" />
-  <meta property="og:url" content="https://hexverce.in/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Hexverce" />
+    <!-- ✅ SOCIAL SHARING (OPEN GRAPH) -->
+    <meta property="og:title" content="Hexverce | AI/ML & Developer Tools by Het Vaghani" />
+    <meta property="og:description" content="Explore Hexverce — a suite of AI/ML and developer tools crafted to enhance productivity, automate workflows, and accelerate innovation." />
+    <meta property="og:image" content="https://hexverce.in/favicon.png" />
+    <meta property="og:url" content="https://hexverce.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hexverce" />
 
-  <!-- ✅ TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hexverce | AI/ML & Developer Tools by Het Vaghani" />
-  <meta name="twitter:description" content="Explore Hexverce — a suite of AI/ML and developer tools built to boost productivity and innovation." />
-  <meta name="twitter:image" content="https://hexverce.in/favicon.png" />
 
-  <!-- ✅ STRUCTURED DATA (Schema.org JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Hexverce",
-    "url": "https://hexverce.in",
-    "logo": "https://hexverce.in/favicon.png",
-    "sameAs": [
-      "https://github.com/vaghanihet2001",
-      "https://www.linkedin.com/in/ai-ml-developer"
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Het Vaghani",
-      "url": "https://hexverce.in"
-    },
-    "description": "Hexverce is a suite of AI/ML products and developer tools by Het Vaghani to enhance productivity and innovation."
-  }
-  </script>
+    <!-- ✅ TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hexverce | AI/ML & Developer Tools by Het Vaghani" />
+    <meta name="twitter:description" content="Explore Hexverce — a suite of AI/ML and developer tools built to boost productivity and innovation." />
+    <meta name="twitter:image" content="https://hexverce.in/favicon.png" />
 
-  <link rel="icon" href="favicon.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+    <!-- ✅ STRUCTURED DATA (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hexverce",
+        "url": "https://hexverce.in",
+        "logo": "https://hexverce.in/favicon.png",
+        "sameAs": [
+        "https://github.com/vaghanihet2001",
+        "https://www.linkedin.com/in/ai-ml-developer"
+        ],
+        "founder": {
+        "@type": "Person",
+        "name": "Het Vaghani",
+        "url": "https://hexverce.in"
+        },
+        "description": "Hexverce is a suite of AI/ML products and developer tools by Het Vaghani to enhance productivity and innovation."
     }
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 100px;
-    }
-    body {
-      background: radial-gradient(circle at top left, #0a0a0a, #121212 40%, #0d0d0d);
-      color: #e0e0e0;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    a {
-      color: #1E90FF;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    a:hover {
-      color: #63b3ff;
-      text-decoration: underline;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(18, 18, 18, 0.8);
-      backdrop-filter: blur(8px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      height: 80px;
-    }
-    header img {
-      height: 60px;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      font-weight: 600;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 5rem 2rem;
-      animation: fadeIn 1.2s ease;
-    }
-    .hero h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      background: linear-gradient(90deg, #1E90FF, #63b3ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin-bottom: 2rem;
-      color: #cfcfcf;
-    }
-    .hero a.button {
-      padding: 0.9rem 2.5rem;
-      background: linear-gradient(90deg, #1E90FF, #63b3ff);
-      color: #fff;
-      border-radius: 8px;
-      font-weight: 600;
-      box-shadow: 0 0 10px rgba(30,144,255,0.4);
-      transition: all 0.3s;
-    }
-    .hero a.button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 25px rgba(30,144,255,0.7);
-    }
-    section {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      animation: fadeUp 1s ease;
-    }
-    section h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      border-bottom: 2px solid #1E90FF;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-      background: linear-gradient(90deg, #1E90FF, #63b3ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .features, .contact {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .feature-card, .project-card {
-      background: rgba(30, 30, 30, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.05);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
-    }
-    .feature-card:hover, .project-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(30,144,255,0.4);
-    }
-    .projects-container {
-      display: flex;
-      overflow-x: auto;
-      gap: 1.5rem;
-      padding-bottom: 1rem;
-      scroll-behavior: smooth;
-    }
-    .projects-container::-webkit-scrollbar {
-      height: 8px;
-    }
-    .projects-container::-webkit-scrollbar-thumb {
-      background: linear-gradient(90deg, #1E90FF, #63b3ff);
-      border-radius: 4px;
-    }
-    .project-card h3 {
-      color: #63b3ff;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
-      animation: fadeIn 1.5s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.2rem; }
-      .projects-container {
-        flex-direction: column;
-        overflow-x: visible;
-        gap: 1.5rem;
-      }
-    }
-  </style>
+    </script>
+
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #0b0d10;
+            --card: rgba(255, 255, 255, 0.04);
+            --accent1: #2aa0ff;
+            --accent2: #70c3ff;
+            --muted: #cfcfcf;
+            /* Vibrant Primary Purple/Blue/Cyan Gradient */
+            --color-primary-start: #2aa0ff;
+            --color-primary-end: #70c3ff;
+            --gradient-primary: linear-gradient(90deg, var(--color-primary-start), var(--color-primary-end));
+            --shadow-primary-glow: 0 0 25px rgba(22, 10, 122, 0.8), 0 0 60px rgba(0, 229, 255, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0c0c0f;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #67b3ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #a8d6ff;
+        }
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        body::-webkit-scrollbar-thumb {
+            /* FIXED: Use the new vertical gradient variable */
+            background: var(--accent1);
+            border-radius: 6px;
+            border: 3px solid var(--accent1); /*Creates space around thumb*/
+        }
+
+        header {
+            width: 100%;
+            padding: 1.5rem 3rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(16px);
+            background: rgba(10, 10, 10, 0.55);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-left: 1.7rem;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 1.6rem;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            border: 0
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: #05121b;
+            box-shadow: 0 12px 30px rgba(50, 140, 255, 0.12)
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--muted);
+            border: 1px solid rgba(255, 255, 255, 0.06)
+        }
+
+        /* ------------------ MOBILE NAV ------------------ */
+        .hamburger {
+            display: none;
+            width: 32px;
+            height: 24px;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            z-index: 2000;
+        }
+
+        .hamburger span {
+            width: 100%;
+            height: 3px;
+            background: #70c3ff;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+
+        /* sliding nav */
+        header nav {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        /* HERO */
+        #hero-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8rem 5rem 3rem;
+            position: relative;
+        }
+
+        #particles-js {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            animation: fadeIn 1.3s ease;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            background: linear-gradient(90deg, #2aa0ff, #70c3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            margin-top: 1.2rem;
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        .hero-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn-main {
+            background: linear-gradient(90deg, #2aa0ff, #70c3ff);
+            padding: 0.9rem 2rem;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 0 20px rgba(50, 140, 255, 0.4);
+        }
+
+        #contact-button {
+            /* margin-top: 2rem; */
+            padding: 1rem 3rem;
+            background: var(--gradient-primary);
+            color: #fff;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #contact-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.5s;
+            z-index: -1;
+            transform: skewX(-20deg);
+        }
+
+        #contact-button:hover::before {
+            left: 100%;
+        }
+
+        #contact-button:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-primary-glow);
+        }
+
+
+        /* HERO CAROUSEL */
+        .hero-carousel {
+            position: relative;
+            width: 640px;
+            height: 480px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(50, 140, 255, 0.25);
+            animation: subtleGlow 6s infinite alternate;
+        }
+
+        .hero-carousel img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transform: translateX(40px) scale(1.03);
+            animation: sliderFade 12s infinite;
+            border-radius: 16px;
+        }
+
+        /* sequence delays */
+        .hero-carousel img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .hero-carousel img:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .hero-carousel img:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        /* fade + slide animation */
+        @keyframes sliderFade {
+            0% {
+                opacity: 0;
+                transform: translateX(40px) scale(1.03);
+            }
+
+            10% {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+
+            40% {
+                opacity: 0;
+                transform: translateX(-40px) scale(0.97);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes subtleGlow {
+            from {
+                box-shadow: 0 10px 30px rgba(50, 140, 255, 0.2);
+            }
+
+            to {
+                box-shadow: 0 15px 50px rgba(50, 140, 255, 0.35);
+            }
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 5rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, #2aa0ff, #70c3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-bottom: 2px solid #2aa0ff;
+            display: inline-block;
+            padding-bottom: 0.4rem;
+        }
+
+        /* FEATURES GRID */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            transition: 0.3s;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(50, 140, 255, 0.45);
+            box-shadow: 0 12px 35px rgba(50, 140, 255, 0.35);
+        }
+
+        .glass-card h3 {
+            margin-bottom: 0.6rem;
+            color: #70c3ff;
+        }
+
+
+        /* about: skills + timeline */
+        #about {
+            padding-top: 40px;
+        }
+
+        .about {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            align-items: flex-start
+        }
+
+        .skills-col {
+            flex: 1 1 360px;
+            min-width: 300px
+        }
+
+        .timeline-col {
+            flex: 1 1 460px;
+            min-width: 300px
+        }
+
+        .about p {
+            color: var(--muted);
+            margin-bottom: 1rem
+        }
+
+        .skills-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.9rem;
+            color: var(--accent2)
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+            gap: 1.25rem
+        }
+
+        .skill-coin {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--card);
+            background-color: #154368;
+            border: 2px solid rgba(80, 160, 255, 0.12);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+            transition: transform 180ms ease, box-shadow 180ms ease;
+            transform-style: preserve-3d;
+            perspective: 900px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden
+        }
+
+        .skill-coin img {
+            width: 56%;
+            height: 56%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none
+        }
+
+        .skill-coin::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06));
+            border-radius: 50%;
+            pointer-events: none
+        }
+
+        .skill-coin.tilt {
+            transform: rotateX(var(--rx)) rotateY(var(--ry)) scale(1.08);
+            box-shadow: 0 22px 50px rgba(50, 140, 255, 0.28)
+        }
+
+        .skill-text-backup {
+            display: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: #70c3ff;
+            z-index: 2;
+        }
+
+        .skill-coin.no-icon img {
+            display: none;
+        }
+
+        .skill-coin.no-icon .skill-text-backup {
+            display: block;
+        }
+
+
+        .skill-label {
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10, 20, 30, 0.8);
+            color: var(--muted);
+            font-size: 12px;
+            padding: 6px 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            opacity: 0;
+            transition: all 160ms ease
+        }
+
+        .skill-coin:hover .skill-label {
+            bottom: -36px;
+            opacity: 1
+        }
+
+        /* timeline alternating */
+        .timeline-wrap {
+            position: relative;
+            padding: 20px 12px 12px 12px;
+            margin-top: 6px
+        }
+
+        .timeline-wrap::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, rgba(50, 140, 255, 0.38), rgba(112, 195, 255, 0.18));
+            border-radius: 6px
+        }
+
+        .tl-item {
+            position: relative;
+            width: 50%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            opacity: 0.35;
+            transform: translateY(10px);
+            transition: all 420ms cubic-bezier(.2, .9, .2, 1);
+            margin: 28px 0
+        }
+
+        .tl-item.active {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .tl-left {
+            left: 0;
+            text-align: right;
+        }
+
+        .tl-right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .tl-item .tl-box {
+            display: inline-block;
+            padding: 12px 16px;
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5)
+        }
+
+        .tl-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent1);
+            box-shadow: 0 0 16px rgba(50, 140, 255, 0.7)
+        }
+
+
+        /* PROJECTS */
+        .project-card {
+            background-size: cover;
+            background-position: center;
+            height: 340px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: 0.4s;
+            margin-bottom: 2rem;
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 14px 40px rgba(30, 144, 255, 0.4);
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.75));
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .project-overlay h3 {
+            color: #fff;
+            margin-bottom: 0.3rem;
+        }
+
+        .project-overlay p {
+            opacity: .85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            opacity: 0.7;
+            margin-top: 5rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /*small width mobile*/
+        @media (max-width: 400px) {
+            #hero-section h1 {
+                font-size: 1.4rem;
+                /* or whatever size you want */
+            }
+
+        }
+
+
+        /* MOBILE MODE */
+        @media (max-width: 1000px) {
+
+            #hero-section h1 {
+                font-size: 2.8rem;
+                /* or whatever size you want */
+            }
+
+            header {
+                padding: 1.2rem 1.4rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            header nav {
+                position: absolute;
+                top: 72px;
+                /* below fixed header */
+                right: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 1.2rem 0;
+                background: rgba(10, 10, 15, 0.9);
+                backdrop-filter: blur(12px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.35s ease;
+            }
+
+            /* when open */
+            header nav.open {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            header nav a {
+                padding: 12px 20px;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            /* hamburger animation */
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+
+            .hero-carousel {
+                display: none;
+            }
+
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 0.2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<header>
-  <img src="favicon.png" alt="Hexverce Logo">
-  <nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
 
-<section class="hero">
-  <h1>Welcome to Hexverce</h1>
-  <p>Hexverce is my flagship suite of AI/ML products and developer tools — built to enhance productivity, automate workflows, and empower innovation.</p>
-  <a href="#contact" class="button">Get in Touch</a>
-</section>
+    <header>
+        <h2 style="font-weight:700; color:#70c3ff;">HexVerce</h2>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I’m an AI/ML Engineer passionate about creating powerful yet easy-to-use tools for developers.</p>
-</section>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-<section id="features">
-  <h2>Features</h2>
-  <div class="features">
-    <div class="feature-card">
-      <h3>AI/ML Models</h3>
-      <p>Implementing deep learning models for real-world use cases.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Desktop Applications</h3>
-      <p>Cross-platform tools integrated with AI for seamless productivity.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Web Applications</h3>
-      <p>Modern, responsive web platforms for intelligent workflows.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Developer Tools</h3>
-      <p>Utilities, frameworks, and extensions for automation.</p>
-    </div>
-  </div>
-</section>
+        <nav id="mobileNav">
+            <a href="#hero-section">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="project-card">
-      <h3>Hex AI Assistant</h3>
-      <p>LLM-based assistant that can browse and automate tasks intelligently.</p>
-      <p><a href="https://github.com/vaghanihet2001/HexAI" target="_blank">🔗 View Repo</a></p>
-    </div>
-    <div class="project-card">
-      <h3><a href="https://hexflow.hexverce.in" target="_blank">HexFlow</a></h3>
-      <p>Interactive web app for workflow and design creation.</p>
-      <p><a href="https://github.com/vaghanihet2001/HexFlow" target="_blank">🔗 View Repo</a></p>
-    </div>
-    <div class="project-card">
-      <h3><a href="https://hexlabel.hexverce.in" target="_blank>">HexLabel</a></h3>
-      <p>Modern annotation platform for dataset labeling in AI/ML projects.</p>
-      <p><a href="https://github.com/vaghanihet2001/HexLabel" target="_blank">🔗 View Repo</a></p>
-    </div>
-  </div>
-</section>
+    <!-- HERO -->
+    <div id="hero-section">
+        <div id="particles-js"></div>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact">
-    <div class="feature-card">
-      <h3>📧 Email</h3>
-      <p><a href="mailto:vaghanihet2001@gmail.com">vaghanihet2001@gmail.com</a></p>
-    </div>
-    <div class="feature-card">
-      <h3>💻 GitHub</h3>
-      <p><a href="https://github.com/vaghanihet2001" target="_blank">github.com/vaghanihet2001</a></p>
-    </div>
-    <div class="feature-card">
-      <h3>🔗 LinkedIn</h3>
-      <p><a href="https://www.linkedin.com/in/ai-ml-developer" target="_blank">linkedin.com/in/ai-ml-developer</a></p>
-    </div>
-  </div>
-</section>
+        <div class="hero-text" data-aos="fade-right">
+            <h1>AI/ML Tools That Power Real-World Intelligence</h1>
+            <p>Explore my suite of modern developer tools — crafted with precision, speed, and real-world engineering.
+            </p>
 
-<footer>
-  &copy; 2025 Hexverce. All Rights Reserved.
-</footer>
+            <div class="hero-buttons">
+                <!-- <a href="#projects" class="btn-main">Explore Projects</a> -->
+                <a id="contact-button" href="#contact">Contact Me</a>
+            </div>
+        </div>
+
+        <!-- HERO IMAGE CAROUSEL -->
+        <div class="hero-carousel" data-aos="fade-left">
+            <img src="assets/hexlabel-demo1.png" />
+            <img src="assets/hexflow-demo1.png" />
+            <img src="assets/hexlabel-demo2.png" />
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Het Vaghani — an AI/ML Engineer building modern tools for automation, dataset annotation, workflow
+            systems, and real-time inference pipelines.</p>
+        <div class="about">
+            <div class="skills-col" data-aos="fade-up">
+                <div class="skills-title">Skills</div>
+                <p class="muted">Languages, frameworks and tools I use daily.</p>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <div class="skill-coin" data-skill="Python" tooltip="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
+                        <div class="skill-text-backup">Python</div>
+                        <div class="skill-label">Python</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="C#" tooltip="C#">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="csharp">
+                        <div class="skill-text-backup">C#</div>
+                        <div class="skill-label">C#</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="Java" tooltip="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java">
+                        <div class="skill-text-backup">Java</div>
+                        <div class="skill-label">Java</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="JavaScript" tooltip="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js">
+                        <div class="skill-text-backup">JavaScript</div>
+                        <div class="skill-label">JavaScript</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="HTML" tooltip="HTML">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html">
+                        <div class="skill-text-backup">HTML</div>
+                        <div class="skill-label">HTML</div>
+                    </div>
+                    
+                    <div class="skill-coin" data-skill="React" tooltip="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <div class="skill-text-backup">React</div>
+                        <div class="skill-label">React</div>
+                    </div>
+
+                     <div class="skill-coin" data-skill="Git" tooltip="Git">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git">
+                        <div class="skill-text-backup">Git</div>
+                        <div class="skill-label">Git</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="AWS" tooltip="AWS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                            alt="aws">
+                        <div class="skill-text-backup">AWS</div>
+                        <div class="skill-label">AWS</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="TensorFlow" tooltip="TensorFlow">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="tf">
+                        <div class="skill-text-backup">TensorFlow</div>
+                        <div class="skill-label">TensorFlow</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="PyTorch" tooltip="PyTorch">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="pytorch">
+                        <div class="skill-text-backup">PyTorch</div>
+                        <div class="skill-label">PyTorch</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="ONNX" tooltip="ONNX">
+                        <img src="https://cdn.simpleicons.org/onnx/70c3ff" alt="onnx">
+                        <div class="skill-text-backup">ONNX</div>
+                        <div class="skill-label">ONNX</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="OpenCV" tooltip="OpenCV">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="opencv">
+                        <div class="skill-text-backup">OpenCV</div>
+                        <div class="skill-label">OpenCV</div>
+                    </div>
+
+                   
+
+                    <div class="skill-coin" data-skill="Flask" tooltip="Flask">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="flask">
+                        <div class="skill-text-backup">Flask</div>
+                        <div class="skill-label">Flask</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="PyQt" tooltip="PyQt">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pyqt/pyqt-original.svg" alt="pyqt">
+                        <div class="skill-text-backup">PyQt</div>
+                        <div class="skill-label">PyQt</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="PySide6" tooltip="PySide6">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pyside6/pyside6-original.svg" alt="pyside">
+                        <div class="skill-text-backup">PySide6</div>
+                        <div class="skill-label">PySide6</div>
+                    </div>
+
+                    <div class="skill-coin" data-skill="Kivy" tooltip="Kivy">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kivy/kivy-original.svg" alt="kivy">
+                        <div class="skill-text-backup">Kivy</div>
+                        <div class="skill-label">Kivy</div>
+                    </div>                    
+
+                </div>
+
+            </div>
+
+            <div class="timeline-col" data-aos="fade-up">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px">
+                    <div style="font-size:1.2rem; font-weight:700; color:var(--accent2)">Experience</div>
+                    <!-- <div class="muted" style="font-size:0.95rem">Scroll to highlight</div> -->
+                </div>
+
+                <div class="timeline-wrap" id="timeline">
+                    <!-- alternate left / right -->
+                    <div class="tl-item tl-left">
+                        <div class="tl-box">
+                            <h4>Jul 2019 – May 2023</h4>
+                            <p>Computer Engineering </p>
+                        </div>
+                        <div class="tl-dot" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="tl-item tl-right">
+                        <div class="tl-box">
+                            <h4>Jan 2023 – Jul 2023</h4>
+                            <p>AI/ML Intern — Weboccult Technology</p>
+                        </div>
+                        <div class="tl-dot" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="tl-item tl-left">
+                        <div class="tl-box">
+                            <h4>Aug 2023 – Aug 2024</h4>
+                            <p>Jr. AI/ML Engineer — Weboccult Technology</p>
+                        </div>
+                        <div class="tl-dot" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="tl-item tl-right">
+                        <div class="tl-box">
+                            <h4>Aug 2024 – Present</h4>
+                            <p>AI/ML Engineer — Weboccult Technology</p>
+                        </div>
+                        <div class="tl-dot" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <!-- FEATURES -->
+    <section id="features">
+        <h2>What I Build</h2>
+        <div class="features-grid">
+            <div class="glass-card" data-aos="zoom-in">
+                <h3>⚡ Real-Time AI</h3>
+                <p>Jetson, GPU pipelines, threading systems, ultra-fast vision inference.</p>
+            </div>
+            <div class="glass-card" data-aos="zoom-in">
+                <h3>🖼 Annotation Tools</h3>
+                <p>Large datasets, auto-save, versioning, polygons, bbox tools.</p>
+            </div>
+            <div class="glass-card" data-aos="zoom-in">
+                <h3>📦 Workflow Engines</h3>
+                <p>Node-based flow editors with execution graph logic.</p>
+            </div>
+            <div class="glass-card" data-aos="zoom-in">
+                <h3>🔗 Developer Tools</h3>
+                <p>Dataset managers, converters, utilities, and automation scripts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card" style="background-image:url('assets/hexlabel-demo1.png');" data-aos="fade-up"
+            onclick="window.location.href='https://hexlabel.hexverce.in'">
+            <div class="project-overlay">
+                <div>
+                    <h3>HexLabel</h3>
+                    <p>Modern dataset annotation tool for serious AI devs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image:url('assets/hexflow-demo1.png');" data-aos="fade-up"
+            onclick="window.location.href='https://hexflow.hexverce.in'">
+            <div class="project-overlay">
+                <div>
+                    <h3>HexFlow</h3>
+                    <p>Node-based workflow editor for ML pipelines.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image:url('assets/hexAiAssistent-demo1.jpg');" data-aos="fade-up"
+            onclick="window.location.href='https://github.com/vaghanihet2001">
+            <div class="project-overlay">
+                <div>
+                    <h3>HexAI Assistant</h3>
+                    <p>LLM-based personal assistant with automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="features-grid">
+
+            <!-- EMAIL -->
+            <div class="glass-card" data-aos="fade-up" onclick="window.location.href='mailto:vaghanihet2001@gmail.com'">
+                <h3 style="display:flex; align-items:center; gap:10px;">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/70c3ff/new-post.png"
+                        style="width:26px; height:26px;" alt="Email Icon">
+                    Email
+                </h3>
+                <p>vaghanihet2001@gmail.com</p>
+            </div>
+
+            <!-- GITHUB -->
+            <div class="glass-card" data-aos="fade-up"
+                onclick="window.location.href='https://github.com/vaghanihet2001'">
+                <h3 style="display:flex; align-items:center; gap:10px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        style="width:26px; height:26px; filter:drop-shadow(0 0 4px #2aa0ff);" alt="GitHub Icon">
+                    GitHub
+                </h3>
+                <p>github.com/vaghanihet2001</p>
+            </div>
+
+            <!-- LINKEDIN -->
+            <div class="glass-card" data-aos="fade-up"
+                onclick="window.location.href='https://www.linkedin.com/in/ai-ml-developer'">
+
+                <h3 style="display:flex; align-items:center; gap:10px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        style="width:26px; height:26px; filter:drop-shadow(0 0 4px #2aa0ff);" alt="LinkedIn Icon">
+                    LinkedIn
+                </h3>
+                <p>linkedin.com/in/ai-ml-developer</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        © 2025 HexVerce by Het Vaghani
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init({ duration: 900, once: true });</script>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60 },
+                "size": { "value": 3 },
+                "move": { "speed": 1 }
+            }
+        });
+
+
+        /* -------------------- Skill coins 3D tilt -------------------- */
+        (function skillTilt() {
+            const coins = document.querySelectorAll('.skill-coin');
+            coins.forEach(coin => {
+                coin.addEventListener('mousemove', (e) => {
+                    const rect = coin.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) - rect.width / 2;
+                    const y = (e.clientY - rect.top) - rect.height / 2;
+                    const rx = (-y / rect.height) * 18;
+                    const ry = (x / rect.width) * 18;
+                    coin.style.setProperty('--rx', rx + 'deg');
+                    coin.style.setProperty('--ry', ry + 'deg');
+                    coin.classList.add('tilt');
+                });
+                coin.addEventListener('mouseleave', () => {
+                    coin.classList.remove('tilt');
+                    coin.style.setProperty('--rx', '0deg');
+                    coin.style.setProperty('--ry', '0deg');
+                });
+                coin.addEventListener('click', () => {
+                    coin.animate([{ transform: getComputedStyle(coin).transform }, { transform: 'scale(1.14)' }], { duration: 180, direction: 'alternate', iterations: 1 });
+                });
+            });
+        })();
+
+        /* -------------------- Timeline alternating highlight (IntersectionObserver) -------------------- */
+        (function timelineObserver() {
+            const items = document.querySelectorAll('.tl-item');
+            if (!('IntersectionObserver' in window)) {
+                // fallback simple scroll handler
+                window.addEventListener('scroll', simpleHighlight);
+                simpleHighlight();
+                return;
+            }
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        const rect = entry.boundingClientRect;
+                        if (rect.top < 0) entry.target.classList.add('active');
+                        else entry.target.classList.remove('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            items.forEach(i => io.observe(i));
+
+            function simpleHighlight() {
+                const trigger = window.innerHeight * 0.6;
+                items.forEach(item => {
+                    const r = item.getBoundingClientRect();
+                    if (r.top < trigger) item.classList.add('active'); else item.classList.remove('active');
+                });
+            }
+        })();
+
+        /* -------------------- Smooth scroll offset for fixed header (menu anchors) --------------- */
+        (function headerAnchorOffset() {
+            // adjust scroll for fixed header: when clicking anchor links, offset by header height
+            const header = document.querySelector('header');
+            const headerHeight = header ? header.offsetHeight : 72;
+
+            // intercept clicks for in-page anchors
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (!target) return;
+                        const rect = target.getBoundingClientRect();
+                        const top = window.scrollY + rect.top - headerHeight - 18; // small margin
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
+        })();
+
+
+        const hamburger = document.getElementById("hamburger");
+        const mobileNav = document.getElementById("mobileNav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileNav.classList.toggle("open");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll("#mobileNav a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileNav.classList.remove("open");
+                hamburger.classList.remove("active");
+            });
+        });
+
+        document.querySelectorAll('.skill-coin img').forEach(img => {
+                img.addEventListener('error', () => {
+                const coin = img.closest('.skill-coin');
+                coin.classList.add('no-icon');
+            });
+        });
+    </script>
+
 </body>
+
 </html>
