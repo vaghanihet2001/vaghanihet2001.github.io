@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HexFlow | Workflow Designing Tool</title>
+    <meta name="description"
+        content="HexFlow is a modern node-based workflow designing tool built using ReactFlow. Design pipelines, link nodes, customize logic, and plan projects visually. Try the live demo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Site CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../Hexverce-bgremove.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <div style="display:flex; align-items:center; gap:10px;">
+            <img src="https://hexverce.in/Hexverce-bgremove.png" width="40px" height="40px">
+            <h2 style="font-weight:700; color:#70c3ff;">HexVerce</h2>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="mobileNav">
+            <a href="https://hexverce.in#hero-section">Home</a>
+            <a href="https://hexverce.in#about">About</a>
+            <a href="https://hexverce.in#projects">Projects</a>
+            <a href="https://hexverce.in#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <section style="padding-top:8rem;">
+
+        <!-- Title -->
+        <div style="display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:3rem; animation:fadeIn 1s;">
+            
+            <h1 style="
+                font-size:3rem;
+                font-weight:800;
+                background:var(--gradient-primary);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;">
+                HexFlow
+            </h1>
+
+            <p style="opacity:0.8; max-width:700px; margin:auto; margin-top:1rem; font-size:1.1rem;">
+                A visual, node-based pipeline builder built using ReactFlow.<br>
+                Design workflows, connect logic, create custom nodes, and visually plan project pipelines.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://github.com/vaghanihet2001/HexFlow.git" target="_blank" class="btn btn-primary"
+                    style="display:flex; align-items:center;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        style="margin-right:10px; width:26px; height:26px; filter:drop-shadow(0 0 4px #2aa0ff);"
+                        alt="GitHub Icon">
+                    Source Code
+                </a>
+
+                <a href="https://hexflow.hexverce.in" target="_blank" id="contact-button">
+                    Try Live Demo
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Showcase -->
+        <div class="glass-card" style="margin:auto; max-width:900px; margin-bottom:4rem; text-align:center;">
+
+            <!-- Replace these with actual HexFlow screenshots -->
+            <img src="../assets/hexflow-demo1.png" alt="HexFlow preview"
+                style="width:100%; border-radius:12px; margin-bottom:1.5rem; box-shadow:0 0 40px rgba(50,140,255,0.25);">
+
+            <img src="../assets/hexflow-demo2.png" alt="HexFlow preview"
+                style="width:100%; border-radius:12px; margin-bottom:1.5rem; box-shadow:0 0 40px rgba(50,140,255,0.25);">
+
+            <img src="../assets/hexflow-demo3.png" alt="HexFlow preview"
+                style="width:100%; border-radius:12px; box-shadow:0 0 40px rgba(50,140,255,0.25);">
+        </div>
+
+
+        <!-- Features -->
+        <h2>Features</h2>
+        <div class="features-grid">
+
+            <div class="glass-card">
+                <h3>🧩 Node-Based Editor</h3>
+                <p>Create workflows visually using draggable nodes and edges.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>🔗 Connect Everything</h3>
+                <p>Link nodes to form pipelines and visualize complete workflows.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>⚒️ Custom Nodes</h3>
+                <p>Developers can create their own node types for custom logic.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>🎨 ReactFlow Powered</h3>
+                <p>Smooth, reliable, modern UI with best-in-class performance.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>🎯 Project Planning</h3>
+                <p>Design complex pipelines for AI, backend, automation or workflow planning.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>🔁 Modify Anytime</h3>
+                <p>Edit node contents, reposition them, and restructure your pipeline on the fly.</p>
+            </div>
+
+            <div class="glass-card">
+                <h3>📤 Export / Save</h3>
+                <p>Export pipeline JSON or save your workflow for future planning.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Description Section -->
+    <section id="description">
+        <h2>Built for Creators</h2>
+        <p>
+            HexFlow is designed for developers, automation engineers, students, and project planners.
+            Build workflows visually instead of writing configuration files manually.  
+            Create your own node logic and customize everything according to your use-case.
+        </p>
+    </section>
+
+
+    <!-- Support Section -->
+    <section id="Support">
+        <h2>Support</h2>
+
+        <p>
+            I build developer tools to help the community work faster and smarter.<br>
+            You can support HexFlow by contributing to the GitHub repo or helping with new ideas.<br><br>
+            If my work helped you, your support keeps these tools running and free.
+        </p>
+
+        <div class="btn btn-primary" style="margin:auto; max-width:400px; margin-top:2rem; text-align:center;">
+            <a href="https://buymeacoffee.com/het.vaghani.2001" target="_blank"
+                style="font-size:1.1rem; color:black; font-weight:600; display:inline-flex; align-items:center; gap:10px;">
+
+                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                    alt="Buy Me a Coffee" width="32" height="32" style="display:block;">
+
+                Buy Me a Coffee
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        © 2025 Hexverce. All rights reserved.
+    </footer>
+
+
+    <!-- MOBILE NAV SCRIPT -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileNav = document.getElementById("mobileNav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileNav.classList.toggle("open");
+        });
+
+        document.querySelectorAll("#mobileNav a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileNav.classList.remove("open");
+                hamburger.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
