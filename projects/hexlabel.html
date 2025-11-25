@@ -3,27 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>HexLabel | AI Labeling Tool by Hexverce</title>
+    <title>HexLabel | AI Dataset Labeling Tool by HexVerce</title>
     <meta name="description"
-        content="HexLabel is a modern AI-powered labeling tool for object detection, segmentation, and automation. Try the live demo.">
+        content="HexLabel is a modern AI-powered labeling tool for object detection, segmentation, dataset management, and automation. Free, open-source, and beginner-friendly. Try the live demo.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main Site CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../Hexverce-bgremove.png" type="image/png" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hexverce.in/projects/hexlabel" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://hexverce.in/Hexverce-bgremove.png" type="image/png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HexLabel – AI Dataset Labeling Tool" />
+    <meta property="og:description"
+        content="HexLabel is a fast, intuitive, open-source labeling tool for object detection, segmentation, dataset creation, and workflow automation. Try it free." />
+    <meta property="og:image" content="https://hexverce.in/assets/hexlabel-demo1.png" />
+    <meta property="og:url" content="https://hexverce.in/projects/hexlabel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HexVerce" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HexLabel – Modern AI Labeling Tool" />
+    <meta name="twitter:description"
+        content="A free, open-source computer vision labeling tool with smart annotation, dataset management, and export formats like YOLO, COCO, VOC, and KITTI." />
+    <meta name="twitter:image" content="https://hexverce.in/assets/hexlabel-demo1.png" />
+
+    <!-- Structured Data (Software Application) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "HexLabel",
+      "description": "HexLabel is a free, modern, AI-powered dataset labeling tool for object detection and segmentation.",
+      "image": "https://hexverce.in/assets/hexlabel-demo1.png",
+      "url": "https://hexverce.in/projects/hexlabel",
+      "applicationCategory": "DeveloperTool",
+      "author": {
+        "@type": "Person",
+        "name": "Het Vaghani"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HexVerce",
+        "url": "https://hexverce.in"
+      }
+    }
+    </script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://hexverce.in/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+
     <header>
         <div style="display:flex; align-items:center; gap:10px;">
-            <img src="https://hexverce.in/Hexverce-bgremove.png" width="40px" height="40px">
+            <img src="https://hexverce.in/Hexverce-bgremove.png" width="40" height="40" alt="HexVerce Logo">
             <h2 style="font-weight:700; color:#70c3ff;">HexVerce</h2>
         </div>
+
         <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
 
         <nav id="mobileNav">
@@ -35,123 +78,125 @@
     </header>
 
 
-
     <!-- MAIN CONTENT -->
     <section style="padding-top:8rem;">
 
         <!-- Title -->
-        <div
-            style="display:flex;flex-direction: column; align-items: center; text-align:center; margin-bottom:3rem; animation:fadeIn 1s;">
+        <div style="display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:3rem; animation:fadeIn 1s;">
+
             <h1 style="
-            font-size:3rem;
-            font-weight:800;
-            background:var(--gradient-primary);
-            -webkit-background-clip:text;
-            -webkit-text-fill-color:transparent;">
+                font-size:3rem;
+                font-weight:800;
+                background:var(--gradient-primary);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;">
                 HexLabel
             </h1>
 
             <p style="opacity:0.8; max-width:700px; margin:auto; margin-top:1rem; font-size:1.1rem;">
-
-                It simplifies the process of preparing training data for computer vision models.
+                A powerful computer-vision annotation tool designed for fast dataset creation.
+                Build training data for object detection and segmentation easily.
             </p>
 
-            <!-- <div style="margin-top:2.5rem;">
-            </div> -->
-
             <div class="hero-buttons">
-                <a href="https://github.com/vaghanihet2001/HexLabel.git" target="_blank" class="btn btn-primary"
-                    style="display: flex; align-items: center;">
+
+                <a href="https://github.com/vaghanihet2001/HexLabel" target="_blank" class="btn btn-primary"
+                    style="display:flex; align-items:center;">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                        style="margin-right:10px; width:26px; height:26px; filter:drop-shadow(0 0 4px #2aa0ff);"
-                        alt="GitHub Icon">
+                        style="margin-right:10px; width:26px; height:26px; filter:drop-shadow(0 0 4px #2aa0ff);" alt="GitHub">
                     Source Code
                 </a>
+
                 <a href="https://hexlabel.hexverce.in" target="_blank" id="contact-button">
                     Try Live Demo
                 </a>
+
             </div>
         </div>
 
-        <!-- Showcase -->
+
+        <!-- Showcase Images -->
         <div class="glass-card" style="margin:auto; max-width:900px; margin-bottom:4rem; text-align:center;">
-            <img src="../assets/hexlabel-demo1.png" alt="HexLabel preview"
+            <img src="https://hexverce.in/assets/hexlabel-demo1.png" alt="HexLabel interface preview 1"
                 style="width:100%; border-radius:12px; box-shadow:0 0 40px rgba(50,140,255,0.25);">
-            <img src="../assets/hexlabel-demo2.png" alt="HexLabel preview"
+
+            <img src="https://hexverce.in/assets/hexlabel-demo2.png" alt="HexLabel interface preview 2"
                 style="width:100%; border-radius:12px; box-shadow:0 0 40px rgba(50,140,255,0.25);">
-            <img src="../assets/hexlabel-demo3.png" alt="HexLabel preview"
+
+            <img src="https://hexverce.in/assets/hexlabel-demo3.png" alt="HexLabel interface preview 3"
                 style="width:100%; border-radius:12px; box-shadow:0 0 40px rgba(50,140,255,0.25);">
         </div>
 
+
         <!-- Features -->
         <h2>Features</h2>
-
         <div class="features-grid">
+
             <div class="glass-card">
                 <h3>🖼️ Smart Annotation</h3>
-                <p>Fast bounding boxes, polygons/segmentation masks with smooth UI.</p>
+                <p>Create bounding boxes, polygons, and segmentation masks with a smooth UI.</p>
             </div>
 
             <div class="glass-card">
                 <h3>📸 Image Upload</h3>
-                <p>Upload images from your computer or drag and drop.</p>
+                <p>Drag & drop or upload images instantly.</p>
             </div>
 
             <div class="glass-card">
-                <h3>📂 dataset Management</h3>
-                <p>Organize your datasets efficiently with projects and versions control.</p>
+                <h3>📂 Dataset Management</h3>
+                <p>Organize projects, revisions, and label sets efficiently.</p>
             </div>
 
             <div class="glass-card">
                 <h3>⚡ AI Assisted</h3>
-                <p>Optional model-assisted labeling to reduce manual effort drastically.</p>
+                <p>Optional AI-assisted labeling to speed up your workflow.</p>
             </div>
 
             <div class="glass-card">
                 <h3>💾 Export Formats</h3>
-                <p>Supports YOLO, COCO, VOC, KITTI and custom formats.</p>
+                <p>Supports YOLO, COCO, VOC, KITTI, and custom output formats.</p>
             </div>
 
             <div class="glass-card">
-                <h3>🌐 Full Browser App</h3>
-                <p>No installation required. Works directly in your browser.</p>
+                <h3>🌐 Works in Browser</h3>
+                <p>No installation needed. Runs fully inside your browser.</p>
             </div>
 
             <div class="glass-card">
-                <h3>🔒 Privacy</h3>
-                <p>We are not storing your images on our servers so your privacy is safe.</p>
+                <h3>🔒 Privacy Friendly</h3>
+                <p>Images stay on your device — nothing is uploaded to servers.</p>
             </div>
+
         </div>
 
-
-
     </section>
 
+
+    <!-- Description Section -->
     <section id="description">
-        <!-- description -->
         <h2>Built for You</h2>
-        <P>
-            It is completly Open Source , and build for New comers in Computer Vision.
-            Who want to create dataset for their projects from scratch.
+        <p>
+            HexLabel is completely open-source and created for developers, students, and beginners in computer vision.
+            Build training datasets for your projects quickly and efficiently — without complex software.
         </p>
     </section>
 
-    <section id="Support">
-        <!-- support -->
-        <h2>Support</h2>
-        <p>
-            I am a Computer Vision enthusiast , who want to create a free tools for computer vision community.<br>
-            You can contribute to this project by contributing to the source code on GitHub.<br>
 
-            If you Like My Work , You can Support Me by Buying Me a Coffee It will help me to cover The Server Cost.
+    <!-- Support Section -->
+    <section id="Support">
+        <h2>Support</h2>
+
+        <p>
+            I develop free tools for the computer vision community.<br>
+            You can contribute by submitting code on GitHub or sharing new ideas.<br><br>
+            If my work helped you, buying me a coffee helps cover server costs.
         </p>
+
         <div class="btn btn-primary" style="margin:auto; max-width:400px; margin-top:2rem; text-align:center;">
             <a href="https://buymeacoffee.com/het.vaghani.2001" target="_blank"
                 style="font-size:1.1rem; color:black; font-weight:600; display:inline-flex; align-items:center; gap:10px;">
-
-                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me a Coffee" width="32"
-                    height="32" style="display:block;">
-
+                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me a Coffee"
+                    width="32" height="32">
                 Buy Me a Coffee
             </a>
         </div>
@@ -160,11 +205,11 @@
 
 
     <footer>
-        © 2025 Hexverce. All rights reserved.
+        © 2025 HexVerce. All rights reserved.
     </footer>
 
 
-    <!-- MOBILE NAV SCRIPT (same behavior as homepage) -->
+    <!-- MOBILE NAV SCRIPT -->
     <script>
         const hamburger = document.getElementById("hamburger");
         const mobileNav = document.getElementById("mobileNav");
@@ -174,7 +219,6 @@
             mobileNav.classList.toggle("open");
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll("#mobileNav a").forEach(link => {
             link.addEventListener("click", () => {
                 mobileNav.classList.remove("open");
