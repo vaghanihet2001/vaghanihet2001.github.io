@@ -327,8 +327,12 @@
 </section>
 
 <footer>
-  &copy; 2025 Hexverce. All Rights Reserved.
+© <span id="year"></span> HexVerce by Het Vaghani
 </footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

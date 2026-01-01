@@ -182,8 +182,12 @@
 
 
     <footer>
-        © 2025 HexVerce. All rights reserved.
+        © <span id="year"></span> HexVerce by Het Vaghani
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <!-- MOBILE NAV SCRIPT -->
     <script>
